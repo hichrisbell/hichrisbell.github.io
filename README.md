@@ -5,14 +5,14 @@ This is the personal website of Chris Bell.
 
 ## Credits
 ### Website design
-- Aerial by [HTML5 UP](html5up.net) | @ajlkn
+- Aerial by [HTML5 UP](https://html5up.net) | @ajlkn
 
 ### Images
-- [Unsplash](unsplash.com)
+- [Unsplash](https://unsplash.com)
 
 ### Icons
-- [Font Awesome](fontawesome.io)
+- [Font Awesome](https://fontawesome.io)
 
 ### Other
-- [jQuery](jquery.com)
-- [Responsive Tools](github.com/ajlkn/responsive-tools)
+- [jQuery](https://jquery.com)
+- [Responsive Tools](https://github.com/ajlkn/responsive-tools)
