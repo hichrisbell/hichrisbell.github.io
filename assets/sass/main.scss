@@ -1099,6 +1099,8 @@ $size-header-pad: 4em;
 
 		strong, b {
 			color: _palette(accent2, fg-bold);
+			background-color: _palette(accent2, bg);
+			padding: 2px 10px;
 		}
 
 		h2, h3, h4, h5, h6 {
@@ -1106,7 +1108,7 @@ $size-header-pad: 4em;
 		}
 
 		h1 {
-			color: _palette(accent2, fg);
+			color: _palette(accent2, fg-bold);
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
