@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Sans+Pro:ital@0;1&display=swap");
 /*
 	Strata by HTML5 UP
 	html5up.net | @ajlkn
@@ -95,7 +95,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 }
 
 body, input, select, textarea {
-  color: #a2a2a2;
+  color: #2c2c2c;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 16pt;
   font-weight: 400;
@@ -107,14 +107,14 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
-  color: #49bf9d;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #ffc600;
 }
 a:hover {
-  border-bottom-color: transparent;
-  color: #49bf9d !important;
-  text-decoration: none;
+  color: #ffc600 !important;
+}
+a:visited {
+  color: #2c2c2c;
 }
 
 strong, b {
@@ -127,6 +127,7 @@ em, i {
 }
 
 p {
+  font-size: 1.2em;
   margin: 0 0 2em 0;
 }
 
@@ -194,9 +195,20 @@ hr.major {
 
 blockquote {
   border-left: solid 6px #efefef;
-  font-style: italic;
+  line-height: 1.5;
   margin: 0 0 2em 0;
   padding: 0.5em 0 0.5em 1.5em;
+}
+blockquote p {
+  font-family: Roboto;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+cite {
+  color: #2c2c2c;
+  font-size: 0.9em;
+  line-height: 1;
 }
 
 code {
@@ -232,6 +244,12 @@ pre code {
 
 .align-right {
   text-align: right;
+}
+
+.highlight {
+  background-color: #ffc600;
+  background-size: 500px;
+  padding: 5px;
 }
 
 /* Container */
@@ -1455,7 +1473,7 @@ input[type=password]:focus,
 input[type=email]:focus,
 select:focus,
 textarea:focus {
-  border-color: #49bf9d;
+  border-color: #ffc600;
 }
 
 select {
@@ -1505,7 +1523,7 @@ input[type=radio] {
 input[type=checkbox] + label,
 input[type=radio] + label {
   text-decoration: none;
-  color: #a2a2a2;
+  color: #2c2c2c;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -1552,7 +1570,7 @@ input[type=radio]:checked + label:before {
 }
 input[type=checkbox]:focus + label:before,
 input[type=radio]:focus + label:before {
-  border-color: #49bf9d;
+  border-color: #ffc600;
 }
 
 input[type=checkbox] + label:before {
@@ -1996,16 +2014,16 @@ input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover,
 .button:hover {
-  border-color: #49bf9d;
-  color: #49bf9d !important;
+  border-color: #ffc600;
+  color: #ffc600 !important;
 }
 input[type=submit]:active,
 input[type=reset]:active,
 input[type=button]:active,
 .button:active {
-  background-color: rgba(73, 191, 157, 0.1);
-  border-color: #49bf9d;
-  color: #49bf9d !important;
+  background-color: rgba(255, 198, 0, 0.1);
+  border-color: #ffc600;
+  color: #ffc600 !important;
 }
 input[type=submit].icon,
 input[type=reset].icon,
@@ -2042,23 +2060,23 @@ input[type=submit].primary,
 input[type=reset].primary,
 input[type=button].primary,
 .button.primary {
-  background-color: #49bf9d;
-  border-color: #49bf9d;
+  background-color: #ffc600;
+  border-color: #ffc600;
   color: #ffffff !important;
 }
 input[type=submit].primary:hover,
 input[type=reset].primary:hover,
 input[type=button].primary:hover,
 .button.primary:hover {
-  background-color: #5cc6a7;
-  border-color: #5cc6a7;
+  background-color: #ffcc1a;
+  border-color: #ffcc1a;
 }
 input[type=submit].primary:active,
 input[type=reset].primary:active,
 input[type=button].primary:active,
 .button.primary:active {
-  background-color: #3eb08f;
-  border-color: #3eb08f;
+  background-color: #e6b200;
+  border-color: #e6b200;
 }
 input[type=submit].disabled, input[type=submit]:disabled,
 input[type=reset].disabled,
@@ -2153,7 +2171,7 @@ input[type=button]:disabled,
 }
 #header .image.avatar {
   margin: 0 0 1em 0;
-  width: 6.25em;
+  width: 10.25em;
 }
 
 /* Footer */

@@ -5,7 +5,7 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import url('fontawesome-all.min.css');
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Sans+Pro:ital@0;1&display=swap');
 
 /*
 	Strata by HTML5 UP
@@ -132,14 +132,15 @@ $size-header-pad: 4em;
 
 	a {
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
-		border-bottom: dotted 1px;
-		color: _palette(accent1, bg);
-		text-decoration: none;
+		text-decoration: underline;
+		text-decoration-color: _palette(accent1, bg);
 
 		&:hover {
-			border-bottom-color: transparent;
 			color: _palette(accent1, bg) !important;
-			text-decoration: none;
+		}
+
+		&:visited {
+			color: _palette(fg);
 		}
 	}
 
@@ -153,6 +154,7 @@ $size-header-pad: 4em;
 	}
 
 	p {
+		font-size: 1.2em;
 		margin: 0 0 _size(element-margin) 0;
 	}
 
@@ -224,9 +226,21 @@ $size-header-pad: 4em;
 
 	blockquote {
 		border-left: solid 6px _palette(border);
-		font-style: italic;
+		line-height: 1.5;
 		margin: 0 0 _size(element-margin) 0;
 		padding: 0.5em 0 0.5em 1.5em;
+
+		p {
+			font-family: Roboto;
+			font-size: 1.5rem;
+			margin-bottom: (_size(element-margin) * 0.5);
+		}
+	}
+
+	cite {
+		color: _palette(fg-bold);
+		font-size: 0.9em;
+		line-height: 1;
 	}
 
 	code {
@@ -263,6 +277,12 @@ $size-header-pad: 4em;
 
 	.align-right {
 		text-align: right;
+	}
+
+	.highlight {
+		background-color: _palette(highlight);
+		background-size: 500px;
+		padding: 5px;
 	}
 
 /* Container */
@@ -1116,7 +1136,7 @@ $size-header-pad: 4em;
 
 		.image.avatar {
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
-			width: 6.25em;
+			width: 10.25em;
 		}
 	}
 
